@@ -1,17 +1,27 @@
 {
-  "name": "portal",
-  "version": "0.1.0",
+  "name": "fanbase",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "nv": "yarn run build; npx cap copy",
+    "ios": "yarn run build; npx cap copy; npx cap open ios",
+    "android": "yarn run build; npx cap copy; npx cap open android"
   },
   "dependencies": {
+    "@capacitor/android": "^1.5.1",
+    "@capacitor/cli": "^1.5.1",
+    "@capacitor/core": "^1.5.1",
+    "@capacitor/ios": "^1.5.1",
+    "@ionic/vue": "0.0.4",
+    "axios": "^0.19.2",
     "core-js": "^3.6.4",
+    "ionicons": "^4.5.9-1",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.11",
-    "vue-router": "^3.1.5",
+    "vue-router": "^3.1.6",
     "vuex": "^3.1.2"
   },
   "devDependencies": {
@@ -24,6 +34,7 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
+    "vue-cli-plugin-ionic": "~1.0.0-alpha.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

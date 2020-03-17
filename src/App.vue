@@ -1,13 +1,30 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <ion-app>
+      <LeftMenu />
+      <ion-vue-router />
+    </ion-app>
   </div>
 </template>
-
+<script>
+import LeftMenu from '@/components/LeftMenu.vue'
+export default {
+  name: "home",
+  data: function () {
+    return {
+      sample: "sample",
+    }
+  },
+  components: {
+    LeftMenu
+  },
+  methods: {
+    closeMenu() {
+      this.$ionic.menuController.close();
+    }
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

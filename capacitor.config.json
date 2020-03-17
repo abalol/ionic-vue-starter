@@ -1,0 +1,8 @@
+{
+  "appId": "com.diffeasy.fanbase",
+  "appName": "Fanbase",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "cordova": {}
+}

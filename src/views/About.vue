@@ -1,5 +1,23 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <ion-page class="ion-page" id="content">
+    <Header />
+    <ion-content class="ion-padding">
+      <h1>アバウトなページです</h1>
+    </ion-content>
+  </ion-page>
 </template>
+
+<script>
+import Header from '@/components/Header.vue'
+export default {
+  name: "home",
+  components: {
+    Header
+  },
+  methods: {
+    onClick () {
+      this.$router.push('/about')
+    }
+  }
+}
+</script>
