@@ -1,4 +1,10 @@
-# portal
+# Ionic/Vue Starter
+
+## initialize
+```
+ionic capacitor add ios
+ionic capacitor add android
+```
 
 ## Project setup
 ```
@@ -19,6 +25,12 @@ npm run build
 ```
 npm run lint
 ```
+
+### Build For XCode
+```
+npm run ios
+```
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
